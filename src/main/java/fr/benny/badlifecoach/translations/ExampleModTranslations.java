@@ -11,13 +11,10 @@ public class ExampleModTranslations extends AbstractTranslationsRegistry {
     @Override
     protected void makeTranslation() {
         addBadCoachTab("name")
-                .en("Bad Life Coach")
-                .fr("Coach de mauvaise vie");
+                .fr("Bad Life Coach");
         addBadCoachTab("title")
-                .en("Welcome to Bad Life Coach inc !")
-                .fr("Bienvenu chez Coach de Mauvaise Vie !");
+                .fr("Bienvenu chez Bad Life Coach (inc.) !");
         addBadCoachTab("button")
-                .en("Get an advise")
                 .fr("Recevoir un conseil");
     }
 
