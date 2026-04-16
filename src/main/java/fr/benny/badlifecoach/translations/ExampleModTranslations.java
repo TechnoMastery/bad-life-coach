@@ -1,11 +1,11 @@
-package your.packagename.translations;
+package fr.benny.badlifecoach.translations;
 
 import net.minheur.potoflux.translations.AbstractTranslationsRegistry;
-import your.packagename.ExampleMod;
+import fr.benny.badlifecoach.BadLifeCoach;
 
 public class ExampleModTranslations extends AbstractTranslationsRegistry {
     public ExampleModTranslations() {
-        super(ExampleMod.MOD_ID);
+        super(BadLifeCoach.MOD_ID);
     }
 
     @Override

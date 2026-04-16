@@ -1,4 +1,4 @@
-package your.packagename.tabs.all;
+package fr.benny.badlifecoach.tabs.all;
 
 import net.minheur.potoflux.screen.tabs.BaseTab;
 import net.minheur.potoflux.translations.Translations;
