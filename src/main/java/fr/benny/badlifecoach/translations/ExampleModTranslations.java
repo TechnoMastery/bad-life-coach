@@ -11,9 +11,11 @@ public class ExampleModTranslations extends AbstractTranslationsRegistry {
     @Override
     protected void makeTranslation() {
         addYourTab("name")
-                .en("Your tab name");
+                .en("Bad Life Coach")
+                .fr("Coach de mauvaise vie");
         addYourTab("title")
-                .en("Your tab title");
+                .en("Welcome to Bad Life Coach inc !")
+                .fr("Bienvenu chez Coach de Mauvaise Vie !");
     }
 
     // tabs helper
