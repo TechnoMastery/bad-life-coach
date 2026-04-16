@@ -1,2 +1,4 @@
-# PotoFlux mod template
-An easy way to get a start for making PotoFlux mods
+# Bad Coach Life
+> Warning: this app is actually only available in French !
+
+Supplies you with advises on your life, in a very bad way !
