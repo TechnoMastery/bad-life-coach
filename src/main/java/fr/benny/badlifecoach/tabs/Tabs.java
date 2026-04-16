@@ -20,7 +20,7 @@ public class Tabs {
     }
 
     // example tab
-    public final Tab BAD_COACH_TAB = LIST.add(new Tab(new ResourceLocation(BadLifeCoach.MOD_ID, "bad_coach_tab"), Translations.get("bad_life_coach:tabs.yourTab.name"), BadCoachTab.class));
+    public final Tab BAD_COACH_TAB = LIST.add(new Tab(new ResourceLocation(BadLifeCoach.MOD_ID, "bad_coach_tab"), Translations.get("bad_life_coach:tabs.badCoach.name"), BadCoachTab.class));
 
     public static void register(RegisterTabsEvent event) {
         INSTANCE = new Tabs();

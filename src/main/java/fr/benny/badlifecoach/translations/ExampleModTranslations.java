@@ -10,16 +10,19 @@ public class ExampleModTranslations extends AbstractTranslationsRegistry {
 
     @Override
     protected void makeTranslation() {
-        addYourTab("name")
+        addBadCoachTab("name")
                 .en("Bad Life Coach")
                 .fr("Coach de mauvaise vie");
-        addYourTab("title")
+        addBadCoachTab("title")
                 .en("Welcome to Bad Life Coach inc !")
                 .fr("Bienvenu chez Coach de Mauvaise Vie !");
+        addBadCoachTab("button")
+                .en("Get an advise")
+                .fr("Recevoir un conseil");
     }
 
     // tabs helper
-    private TranslationBuilder addYourTab(String... children) {
-        return addTab("yourTab", children);
+    private TranslationBuilder addBadCoachTab(String... children) {
+        return addTab("badCoach", children);
     }
 }
