@@ -51,27 +51,17 @@ public class BadlifecoachAdviseTroll {
 
     private static final Map<BadnessLevel, List<String>> allAdvises = new HashMap<>();
 
-    private static final List<String> advisesTroll = List.of();
-
     public static void load() {
         allAdvises.put(BadnessLevel.GREEN, greenAdvises);
         allAdvises.put(BadnessLevel.ORANGE, orangeAdvises);
         allAdvises.put(BadnessLevel.RED, redAdvises);
     }
 
-    public static String getAdvise() {
-        int index = ThreadLocalRandom.current().nextInt(advisesTroll.size());
-        return advisesTroll.get(index);
-    }
+    public static String getAdvise(BadnessLevel level) {
+        List<String> list = allAdvises.get(level);
 
-    public static int getBadnessLevel() {
-        return ThreadLocalRandom.current().nextInt(0, 101);
-    }
-
-    public static String getColor(int level) {
-        if (level < 30) return "GREEN 🟢";
-        if (level < 70) return "ORANGE 🟠";
-        return "RED 🔴";
+        int index = ThreadLocalRandom.current().nextInt(list.size());
+        return list.get(index);
     }
 
 }
