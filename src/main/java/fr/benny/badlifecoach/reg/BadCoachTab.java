@@ -1,6 +1,6 @@
-package fr.benny.badlifecoach.tabs.all;
+package fr.benny.badlifecoach.reg;
 
-import fr.benny.badlifecoach.troll.BadLifeCoachAdviseTroll;
+import fr.benny.badlifecoach.BadLifeCoachAdviseTroll;
 import net.minheur.potoflux.screen.tabs.BaseTab;
 import net.minheur.potoflux.translations.Translations;
 

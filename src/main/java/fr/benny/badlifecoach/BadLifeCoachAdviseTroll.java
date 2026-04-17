@@ -1,8 +1,5 @@
-package fr.benny.badlifecoach.troll;
+package fr.benny.badlifecoach;
 
-import net.minheur.potoflux.PotoFlux;
-
-import javax.swing.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package fr.benny.badlifecoach.tabs;
+package fr.benny.badlifecoach.reg;
 
 import net.minheur.potoflux.loader.mod.events.RegisterTabsEvent;
 import net.minheur.potoflux.registry.RegistryList;
@@ -6,7 +6,6 @@ import net.minheur.potoflux.screen.tabs.Tab;
 import net.minheur.potoflux.translations.Translations;
 import net.minheur.potoflux.utils.ressourcelocation.ResourceLocation;
 import fr.benny.badlifecoach.BadLifeCoach;
-import fr.benny.badlifecoach.tabs.all.BadCoachTab;
 
 public class Tabs {
     private final RegistryList<Tab> LIST = new RegistryList<>();

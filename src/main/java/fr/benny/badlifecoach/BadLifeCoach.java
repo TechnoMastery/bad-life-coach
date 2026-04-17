@@ -1,5 +1,6 @@
 package fr.benny.badlifecoach;
 
+import fr.benny.badlifecoach.reg.ActionRuns;
 import net.minheur.potoflux.PotoFlux;
 import net.minheur.potoflux.loader.PotoFluxLoadingContext;
 import net.minheur.potoflux.loader.mod.Mod;
@@ -7,8 +8,8 @@ import net.minheur.potoflux.loader.mod.ModEventBus;
 import net.minheur.potoflux.loader.mod.events.RegisterLangEvent;
 import net.minheur.potoflux.logger.LogCategories;
 import net.minheur.potoflux.logger.PtfLogger;
-import fr.benny.badlifecoach.tabs.Tabs;
-import fr.benny.badlifecoach.translations.BadLifeCoachTranslations;
+import fr.benny.badlifecoach.reg.Tabs;
+import fr.benny.badlifecoach.reg.BadLifeCoachTranslations;
 
 import java.io.IOException;
 import java.nio.file.Files;

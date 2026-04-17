@@ -1,4 +1,4 @@
-package fr.benny.badlifecoach.troll;
+package fr.benny.badlifecoach;
 
 public enum BadnessLevel {
     GREEN("vert"),

@@ -1,4 +1,4 @@
-package fr.benny.badlifecoach.translations;
+package fr.benny.badlifecoach.reg;
 
 import net.minheur.potoflux.translations.AbstractTranslationsRegistry;
 import fr.benny.badlifecoach.BadLifeCoach;

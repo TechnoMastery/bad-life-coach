@@ -1,6 +1,7 @@
-package fr.benny.badlifecoach;
+package fr.benny.badlifecoach.reg;
 
-import fr.benny.badlifecoach.troll.BadLifeCoachAdviseTroll;
+import fr.benny.badlifecoach.BadLifeCoach;
+import fr.benny.badlifecoach.BadLifeCoachAdviseTroll;
 import net.minheur.potoflux.actionRuns.regs.ActionRun;
 import net.minheur.potoflux.loader.mod.events.RegisterRunsEvent;
 import net.minheur.potoflux.registry.RegistryList;
