@@ -48,7 +48,9 @@ public class BadlifecoachAdviseTroll {
     );
 
     public static void load() {
-
+        allAdvises.put(BadnessLevel.GREEN, greenAdvises);
+        allAdvises.put(BadnessLevel.ORANGE, orangeAdvises);
+        allAdvises.put(BadnessLevel.RED, redAdvises);
     }
 
     public static String getAdvise() {
