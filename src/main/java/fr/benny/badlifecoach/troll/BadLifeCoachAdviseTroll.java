@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class BadlifecoachAdviseTroll {
+public class BadLifeCoachAdviseTroll {
 
     private static final List<String> redAdvises = List.of(
             "Envoie 't ki ?' à ton crush à 3h du matin.",
@@ -13,7 +13,7 @@ public class BadlifecoachAdviseTroll {
             "Si ta mère te soule, met lui une claque",
             "Réponds 'ok' à tout. Même aux trucs graves.",
             "Si le prof te regarde, regarde ailleurs. Invisibilité activée.",
-            "Si le prof de demande de prendre la porte, prend la porte en la devissant"
+            "Si le prof de demande de prendre la porte, prend la porte en la dévissant"
             );
     private static final List<String> orangeAdvises = List.of(
             "Si quelqu’un t’énerve, ignore-le… pendant 3 ans.",
@@ -29,9 +29,10 @@ public class BadlifecoachAdviseTroll {
             "Si ça marche pas, recommence pareil.",
             "Si t’as peur, fonce sans réfléchir.",
             "Comme le dicton le dis : femme qui rit a moitiée dans ton lit!"
+            "Comme le dicton le dis : femme qui rit a moitié dans ton lit!"
     );
     private static final List<String> greenAdvises = List.of(
-            "tu n'arrive pas à réflechier, arrête",
+            "tu n'arrive pas à réfléchir, arrête",
             "Si t’as pas compris, fais comme si c’était inutile.",
             "T’as plus de batterie ? Éteins ton téléphone, problème réglé.",
             "Parle fort même si t’as tort, ça passe mieux.",
@@ -46,7 +47,9 @@ public class BadlifecoachAdviseTroll {
             "Si tu veux être populaire, parle plus fort que tout le monde.",
             "Si t’as un doute, fais pire.",
             "Arrive en retard avec confiance, ça devient stylé.",
-            "Si tu es en retard en arrivant, dis bonjour a ton prof normalement"
+            "Si tu es en retard en arrivant, dis bonjour a ton prof normalement",
+            "T’as encore rien fait aujourd’hui",
+            "Envoie-lui (qui?) un message"
     );
 
     private static final Map<BadnessLevel, List<String>> allAdvises = new HashMap<>();
