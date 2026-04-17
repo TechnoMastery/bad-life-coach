@@ -1,9 +1,17 @@
 package fr.benny.badlifecoach.troll;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class BadlifecoachAdviseTroll {
+
+    private static final List<String> redAdvises = List.of();
+    private static final List<String> orangeAdvises = List.of();
+    private static final List<String> greenAdvises = List.of();
+
+    private static final Map<BadnessLevel, List<String>> allAdvises = new HashMap<>();
 
     private static final List<String> advisesTroll = List.of(
             "Si t’as un contrôle, ne révise pas. Le stress améliore la créativité.",
@@ -38,7 +46,9 @@ public class BadlifecoachAdviseTroll {
             "Si t’as pas compris, fais comme si c’était inutile."
     );
 
+    public static void load() {
 
+    }
 
     public static String getAdvise() {
         int index = ThreadLocalRandom.current().nextInt(advisesTroll.size());
