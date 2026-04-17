@@ -3,8 +3,8 @@ package fr.benny.badlifecoach.translations;
 import net.minheur.potoflux.translations.AbstractTranslationsRegistry;
 import fr.benny.badlifecoach.BadLifeCoach;
 
-public class ExampleModTranslations extends AbstractTranslationsRegistry {
-    public ExampleModTranslations() {
+public class BadLifeCoachTranslations extends AbstractTranslationsRegistry {
+    public BadLifeCoachTranslations() {
         super(BadLifeCoach.MOD_ID);
     }
 

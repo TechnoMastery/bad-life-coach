@@ -8,7 +8,7 @@ import net.minheur.potoflux.loader.mod.events.RegisterLangEvent;
 import net.minheur.potoflux.logger.LogCategories;
 import net.minheur.potoflux.logger.PtfLogger;
 import fr.benny.badlifecoach.tabs.Tabs;
-import fr.benny.badlifecoach.translations.ExampleModTranslations;
+import fr.benny.badlifecoach.translations.BadLifeCoachTranslations;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,7 +28,7 @@ public class BadLifeCoach {
     }
 
     private void onRegisterLang(RegisterLangEvent event) {
-        event.registerLang(new ExampleModTranslations());
+        event.registerLang(new BadLifeCoachTranslations());
     }
 
     public static Path getModDir() {
