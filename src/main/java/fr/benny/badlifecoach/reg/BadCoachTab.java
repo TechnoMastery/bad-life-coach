@@ -1,6 +1,6 @@
 package fr.benny.badlifecoach.reg;
 
-import fr.benny.badlifecoach.BadLifeCoachAdviseTroll;
+import fr.benny.badlifecoach.AdviseProvider;
 import net.minheur.potoflux.screen.tabs.BaseTab;
 import net.minheur.potoflux.translations.Translations;
 
@@ -23,7 +23,7 @@ public class BadCoachTab extends BaseTab {
         disclaimer2.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         getAdviseButton = new JButton(Translations.get("bad_life_coach:tabs.badCoach.button"));
-        getAdviseButton.addActionListener(e -> BadLifeCoachAdviseTroll.generateAdvise());
+        getAdviseButton.addActionListener(e -> AdviseProvider.generateAdvise());
         getAdviseButton.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         PANEL.add(disclaimer1);

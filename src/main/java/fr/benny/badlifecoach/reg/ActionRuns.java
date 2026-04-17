@@ -1,7 +1,7 @@
 package fr.benny.badlifecoach.reg;
 
 import fr.benny.badlifecoach.BadLifeCoach;
-import fr.benny.badlifecoach.BadLifeCoachAdviseTroll;
+import fr.benny.badlifecoach.AdviseProvider;
 import net.minheur.potoflux.actionRuns.regs.ActionRun;
 import net.minheur.potoflux.loader.mod.events.RegisterRunsEvent;
 import net.minheur.potoflux.registry.RegistryList;
@@ -19,7 +19,7 @@ public class ActionRuns {
     }
 
     // def action runs
-    public final ActionRun FILL_ADVISES = LIST_START_LOGIC.add(new ActionRun(new ResourceLocation(BadLifeCoach.MOD_ID, "fill_advises"), BadLifeCoachAdviseTroll::load));
+    public final ActionRun FILL_ADVISES = LIST_START_LOGIC.add(new ActionRun(new ResourceLocation(BadLifeCoach.MOD_ID, "fill_advises"), AdviseProvider::load));
 
 
     public static void register(RegisterRunsEvent event) {

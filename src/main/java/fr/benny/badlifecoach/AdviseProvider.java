@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class BadLifeCoachAdviseTroll {
+public class AdviseProvider {
 
     private static final List<String> redAdvises = List.of(
             "Envoie 't ki ?' à ton crush à 3h du matin.",
