@@ -26,6 +26,9 @@ public class BadLifeAdviseHandler {
         advises.add("Benny est le boss");
         advises.add("Franchement, ne change rien, sa a l'air de bien pas marcher");
         advises.add("Si tu continue comme sa tu va rester où tu es");
+        advises.add("Continue comme ça et tu sera comme de la merde");
+        advises.add("Oublie pas de respirer");
+        advises.add("Tu ne sera jamais meilleur, alors ameliore toi");
     }
 
     public static void generateAdvise() {
@@ -33,7 +36,7 @@ public class BadLifeAdviseHandler {
 
         JOptionPane.showMessageDialog(
                 PotoFlux.app.getFrame(),
-                advise, "Voici un conseil:",
+                advise, "Voici un conseil(ou pas):",
                 JOptionPane.INFORMATION_MESSAGE
         );
     }
