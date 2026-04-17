@@ -24,6 +24,7 @@ public class BadLifeCoach {
 
         modEventBus.addListener(Tabs::register);
         modEventBus.addListener(this::onRegisterLang);
+        modEventBus.addListener(ActionRuns::register);
     }
 
     private void onRegisterLang(RegisterLangEvent event) {
