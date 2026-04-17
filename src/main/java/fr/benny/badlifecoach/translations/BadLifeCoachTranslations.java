@@ -11,11 +11,11 @@ public class BadLifeCoachTranslations extends AbstractTranslationsRegistry {
     @Override
     protected void makeTranslation() {
         addBadCoachTab("name")
-                .fr("Bad Life Coach");
+                .en("Bad Life Coach");
         addBadCoachTab("title")
-                .fr("Bienvenu chez Bad Life Coach (inc.) !");
+                .en("Bienvenu chez Bad Life Coach (inc.) !");
         addBadCoachTab("button")
-                .fr("Recevoir un conseil");
+                .en("Recevoir un conseil");
     }
 
     // tabs helper
