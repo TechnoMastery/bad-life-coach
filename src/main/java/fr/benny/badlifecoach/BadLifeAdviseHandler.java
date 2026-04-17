@@ -56,6 +56,10 @@ public class BadLifeAdviseHandler {
         advises.add("Plus tu fais rien, moins tu peux échouer. C’est mathématique.");
         advises.add("Si ça marche pas, regarde ailleurs.");
         advises.add("Fais confiance au chaos, il a plus d’expérience que toi.");
+        advises.add("Si tu continue comme sa tu va rester où tu es");
+        advises.add("Continue comme ça et tu sera comme de la merde");
+        advises.add("Oublie pas de respirer");
+        advises.add("Tu ne sera jamais meilleur, alors ameliore toi");
     }
 
     public static void generateAdvise() {
@@ -63,7 +67,7 @@ public class BadLifeAdviseHandler {
 
         JOptionPane.showMessageDialog(
                 PotoFlux.app.getFrame(),
-                advise, "Voici un conseil:",
+                advise, "Voici un conseil(ou pas):",
                 JOptionPane.INFORMATION_MESSAGE
         );
     }

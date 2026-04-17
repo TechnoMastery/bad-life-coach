@@ -3,19 +3,19 @@ package fr.benny.badlifecoach.translations;
 import net.minheur.potoflux.translations.AbstractTranslationsRegistry;
 import fr.benny.badlifecoach.BadLifeCoach;
 
-public class ExampleModTranslations extends AbstractTranslationsRegistry {
-    public ExampleModTranslations() {
+public class BadLifeCoachTranslations extends AbstractTranslationsRegistry {
+    public BadLifeCoachTranslations() {
         super(BadLifeCoach.MOD_ID);
     }
 
     @Override
     protected void makeTranslation() {
         addBadCoachTab("name")
-                .fr("Bad Life Coach");
+                .en("Bad Life Coach");
         addBadCoachTab("title")
-                .fr("Bienvenu chez Bad Life Coach (inc.) !");
+                .en("Bienvenu chez Bad Life Coach (inc.) !");
         addBadCoachTab("button")
-                .fr("Recevoir un conseil");
+                .en("Recevoir un conseil");
     }
 
     // tabs helper
