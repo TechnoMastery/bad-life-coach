@@ -43,7 +43,8 @@ public class BadlifecoachAdviseTroll {
             "Si t’as peur, fonce sans réfléchir.",
             "Plus c’est compliqué, moins t’essaies.",
             "Si quelqu’un te corrige, dis que c’était un test.",
-            "Si t’as pas compris, fais comme si c’était inutile."
+            "Si t’as pas compris, fais comme si c’était inutile.",
+            "tu n'arrive pas à réflechier, arrête"
     );
 
     public static void load() {
