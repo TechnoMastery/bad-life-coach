@@ -1,4 +1,4 @@
-package fr.benny.badlifecoach.translations;
+package fr.benny.badlifecoach.troll;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
@@ -40,19 +40,19 @@ public class BadlifecoachAdviseTroll {
 
 
 
-    public static String getConseil() {
+    public static String getAdvise() {
         int index = ThreadLocalRandom.current().nextInt(advisesTroll.size());
         return advisesTroll.get(index);
     }
 
-    public static int getNiveauNullite() {
+    public static int getBadnessLevel() {
         return ThreadLocalRandom.current().nextInt(0, 101);
     }
 
-    public static String getCouleur(int niveau) {
-        if (niveau < 30) return "VERT 🟢";
-        if (niveau < 70) return "ORANGE 🟠";
-        return "ROUGE 🔴";
+    public static String getColor(int level) {
+        if (level < 30) return "GREEN 🟢";
+        if (level < 70) return "ORANGE 🟠";
+        return "RED 🔴";
     }
 
 }
