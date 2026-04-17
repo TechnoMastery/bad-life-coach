@@ -22,6 +22,10 @@ public class BadLifeAdviseHandler {
         advises.add("Arrête ton téléphone");
         advises.add("Bois de l’eau");
         advises.add("Va dormir");
+        advises.add("Pourquoi tu es moche");
+        advises.add("Benny est le boss");
+        advises.add("Franchement, ne change rien, sa a l'air de bien pas marcher");
+        advises.add("Si tu continue comme sa tu va rester où tu es");
     }
 
     public static void generateAdvise() {
