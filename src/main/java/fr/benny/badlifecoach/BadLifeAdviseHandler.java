@@ -28,7 +28,7 @@ public class BadLifeAdviseHandler {
         advises.add("Si tu continue comme sa tu va rester où tu es");
         advises.add("Continue comme ça et tu sera comme de la merde");
         advises.add("Oublie pas de respirer");
-        advises.add("")
+        advises.add("Tu ne sera jamais meilleur, alors ameliore toi");
     }
 
     public static void generateAdvise() {
