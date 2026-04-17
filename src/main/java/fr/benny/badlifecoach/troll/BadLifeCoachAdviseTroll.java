@@ -1,5 +1,8 @@
 package fr.benny.badlifecoach.troll;
 
+import net.minheur.potoflux.PotoFlux;
+
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,8 +16,15 @@ public class BadLifeCoachAdviseTroll {
             "Si ta mère te soule, met lui une claque",
             "Réponds 'ok' à tout. Même aux trucs graves.",
             "Si le prof te regarde, regarde ailleurs. Invisibilité activée.",
-            "Si le prof de demande de prendre la porte, prend la porte en la dévissant"
-            );
+            "Si le prof de demande de prendre la porte, prend la porte en la dévissant",
+            "Comme le dicton le dis : femme qui rit a moitié dans ton lit!",
+            "Benny est le boss. Ouais c'est en HARDDD car c'est choquant nan ?",
+            "Même ton futur toi te juge.",
+            "Si la médiocrité était un sport, tu serais pro.",
+            "On dirait que t’essaies… de ne pas essayer.",
+            "T’es pas en retard, t’es hors course.",
+            "Continue comme ça et tu sera comme de la merde"
+    );
     private static final List<String> orangeAdvises = List.of(
             "Si quelqu’un t’énerve, ignore-le… pendant 3 ans.",
             "Si t’as un contrôle, ne révise pas. Le stress améliore la créativité.",
@@ -28,11 +38,26 @@ public class BadLifeCoachAdviseTroll {
             "Si t’as pas bossé, dis que t’as révisé dans ta tête.",
             "Si ça marche pas, recommence pareil.",
             "Si t’as peur, fonce sans réfléchir.",
-            "Comme le dicton le dis : femme qui rit a moitiée dans ton lit!"
-            "Comme le dicton le dis : femme qui rit a moitié dans ton lit!"
+            "Va prendre une douche",
+            "Va dormir",
+            "C’est pas que tu fais mal, c’est que tu fais rien.",
+            "Fais confiance au chaos, il a plus d’expérience que toi.",
+            "Si tu continue comme sa tu va rester où tu es",
+            "Tu ne sera jamais meilleur, alors ameliore toi",
+            "Au moins, tu es constant. Constamment inefficace.",
+            "Respire. Voilà, tu progresses déjà plus que ce matin.",
+            "Si t’as la flemme, allonge-toi encore plus.",
+            "Fais une pause. De toute façon t’avais pas commencé.",
+            "tu n'arrive pas à réfléchir, arrête",
+            "Réfléchis moins, ça changera rien au résultat.",
+            "Visualise ton succès. Maintenant retourne procrastiner.",
+            "Travaille dur. Ou fais semblant, c’est déjà ça.",
+            "À ce rythme-là, t’es large pour rater.",
+            "Franchement, abandonner maintenant, c’est gagner du temps.",
+            "Si t’as un problème, deviens le problème.",
+            "Ignore tes responsabilités, elles finiront peut-être par t’oublier."
     );
     private static final List<String> greenAdvises = List.of(
-            "tu n'arrive pas à réfléchir, arrête",
             "Si t’as pas compris, fais comme si c’était inutile.",
             "T’as plus de batterie ? Éteins ton téléphone, problème réglé.",
             "Parle fort même si t’as tort, ça passe mieux.",
@@ -49,7 +74,27 @@ public class BadLifeCoachAdviseTroll {
             "Arrive en retard avec confiance, ça devient stylé.",
             "Si tu es en retard en arrivant, dis bonjour a ton prof normalement",
             "T’as encore rien fait aujourd’hui",
-            "Envoie-lui (qui?) un message"
+            "Envoie-lui (qui?) un message",
+            "Fait tes devoirs",
+            "Si ça marche pas, regarde ailleurs.",
+            "Plus tu fais rien, moins tu peux échouer. C’est mathématique.",
+            "Arrête ton PC, c'est pire que quand tu scroll sur tiktok...",
+            "Bois de l’eau. Ça résout au moins 0,3% de tes problèmes.",
+            "Pourquoi tu es moche",
+            "Franchement, ne change rien, sa a l'air de bien... pas marcher",
+            "Si tu continues comme ça, tu vas rester exactement où tu es.",
+            "T’as essayé… de faire un effort ? Juste pour voir ?",
+            "Organise ton bordel. Ou pas, ça reste du bordel.",
+            "Fixe-toi des objectifs. Ignore-les ensuite.",
+            "Sors de ta zone de confort. Ou reste, ça a l’air cosy.",
+            "Deviens la meilleure version de toi-même. Demain.",
+            "Commence petit. Genre vraiment petit. Genre rien.",
+            "T’as le temps… de tout repousser.",
+            "T’es fatigué ? Repose-toi de ta fatigue.",
+            "Pourquoi faire aujourd’hui ce que tu peux regretter demain ?",
+            "Le succès, c’est surfait.",
+            "T’as réussi à perdre du temps efficacement, bravo.",
+            "Oublie pas de respirer"
     );
 
     private static final Map<BadnessLevel, List<String>> allAdvises = new HashMap<>();
@@ -65,6 +110,10 @@ public class BadLifeCoachAdviseTroll {
 
         int index = ThreadLocalRandom.current().nextInt(list.size());
         return list.get(index);
+    }
+
+    public static void generateAdvise() {
+        // TODO: gen advise
     }
 
 }
