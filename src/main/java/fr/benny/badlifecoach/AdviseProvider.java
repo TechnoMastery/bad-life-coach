@@ -1,5 +1,8 @@
 package fr.benny.badlifecoach;
 
+import net.minheur.potoflux.PotoFlux;
+
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -110,7 +113,27 @@ public class AdviseProvider {
     }
 
     public static void generateAdvise() {
-        // TODO: gen advise
+
+        JComboBox<BadnessLevel> choose = new JComboBox<>();
+        choose.addItem(BadnessLevel.GREEN);
+        choose.addItem(BadnessLevel.ORANGE);
+        choose.addItem(BadnessLevel.RED);
+
+        int check = JOptionPane.showConfirmDialog(
+                PotoFlux.app.getFrame(),
+                choose,
+                "Choisi un type de conseil",
+                JOptionPane.OK_CANCEL_OPTION
+        );
+        if (check == JOptionPane.CANCEL_OPTION) return;
+
+        String advise = getAdvise(((BadnessLevel) choose.getSelectedItem()));
+        JOptionPane.showMessageDialog(
+                PotoFlux.app.getFrame(),
+                advise,
+                "voici un conseil",
+                JOptionPane.INFORMATION_MESSAGE
+        );
     }
 
 }
