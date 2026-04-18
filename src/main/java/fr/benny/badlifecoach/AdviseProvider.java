@@ -1,6 +1,8 @@
 package fr.benny.badlifecoach;
 
+import fr.benny.badlifecoach.reg.BadAdviseLogCategories;
 import net.minheur.potoflux.PotoFlux;
+import net.minheur.potoflux.logger.PtfLogger;
 
 import javax.swing.*;
 import java.util.HashMap;
@@ -148,6 +150,8 @@ public class AdviseProvider {
         allAdvises.put(BadnessLevel.GREEN, greenAdvises);
         allAdvises.put(BadnessLevel.ORANGE, orangeAdvises);
         allAdvises.put(BadnessLevel.RED, redAdvises);
+
+        PtfLogger.info("Loaded all advises !", BadAdviseLogCategories.COACH);
     }
 
     public static String getAdvise(BadnessLevel level) {
