@@ -114,10 +114,10 @@ public class AdviseProvider {
 
     public static void generateAdvise() {
 
-        JComboBox<BadnessLevel> choose = new JComboBox<>();
-        choose.addItem(BadnessLevel.GREEN);
-        choose.addItem(BadnessLevel.ORANGE);
-        choose.addItem(BadnessLevel.RED);
+        JComboBox<String> choose = new JComboBox<>();
+        choose.addItem(BadnessLevel.GREEN.getDisplayText());
+        choose.addItem(BadnessLevel.ORANGE.getDisplayText());
+        choose.addItem(BadnessLevel.RED.getDisplayText());
 
         int check = JOptionPane.showConfirmDialog(
                 PotoFlux.app.getFrame(),
@@ -127,7 +127,7 @@ public class AdviseProvider {
         );
         if (check == JOptionPane.CANCEL_OPTION) return;
 
-        String advise = getAdvise(((BadnessLevel) choose.getSelectedItem()));
+        String advise = getAdvise(BadnessLevel.getFromDisplayText(((String) choose.getSelectedItem())));
         JOptionPane.showMessageDialog(
                 PotoFlux.app.getFrame(),
                 advise,
