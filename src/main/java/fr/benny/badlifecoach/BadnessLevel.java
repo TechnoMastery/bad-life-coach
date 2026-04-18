@@ -14,4 +14,11 @@ public enum BadnessLevel {
     public String getDisplayText() {
         return displayText;
     }
+
+    public static BadnessLevel getFromDisplayText(String displayText) {
+        for (BadnessLevel level : BadnessLevel.values()) {
+            if (level.displayText.equals(displayText)) return level;
+        }
+        return null;
+    }
 }

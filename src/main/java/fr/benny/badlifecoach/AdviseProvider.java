@@ -1,5 +1,8 @@
 package fr.benny.badlifecoach;
 
+import net.minheur.potoflux.PotoFlux;
+
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,7 +23,22 @@ public class AdviseProvider {
             "Si la médiocrité était un sport, tu serais pro.",
             "On dirait que t’essaies… de ne pas essayer.",
             "T’es pas en retard, t’es hors course.",
-            "Continue comme ça et tu sera comme de la merde"
+            "Continue comme ça et tu sera comme de la merde",
+            "Tu es pas pessimiste, tu es juste réaliste… avec un abonnement premium.",
+            "Ton avenir est tellement flou que même Google Maps abandonne.",
+            "Tu as enfin trouvé ta motivation… elle était en congé depuis 2012.",
+            "Tu procrastines pas, tu prépares ton futur toi à gérer la pression.",
+            "Ton cerveau a plusieurs onglets ouverts… aucun ne charge.",
+            "Tu es pas en retard, tu es en décalage temporel.",
+            "Si l’échec était un sport, tu serais champion olympique.",
+            "Tu as un humour tellement sombre qu’il économise l’électricité.",
+            "Ta vie est une blague… mais personne t’a expliqué la chute.",
+            "Tu voulais être quelqu’un… mais c’était déjà pris.",
+            "Tu es pas nul, tu es en version bêta.",
+            "Ton plan A a échoué… heureusement t’avais pas de plan B.",
+            "Tu as pas de problème, tu as juste des situations créatives.",
+            "Ton niveau de chance ? Même les bugs t’évitent.",
+            "Tu réfléchis beaucoup… mais rarement au bon moment."
     );
     private static final List<String> orangeAdvises = List.of(
             "Si quelqu’un t’énerve, ignore-le… pendant 3 ans.",
@@ -52,7 +70,22 @@ public class AdviseProvider {
             "À ce rythme-là, t’es large pour rater.",
             "Franchement, abandonner maintenant, c’est gagner du temps.",
             "Si t’as un problème, deviens le problème.",
-            "Ignore tes responsabilités, elles finiront peut-être par t’oublier."
+            "Ignore tes responsabilités, elles finiront peut-être par t’oublier.",
+            "Tu penses trop… mais rarement au bon moment.",
+            "Ton plan A ? Déjà abandonné.",
+            "Même ton réveil a perdu espoir.",
+            "Tu avances… mais pas dans la bonne direction.",
+            "Ton cerveau bug plus que ton PC.",
+            "T’as du potentiel… mais il est en maintenance.",
+            "Même tes idées prennent des jours off.",
+            "Tu rates avec une régularité impressionnante.",
+            "Ton avenir ? Chargement infini.",
+            "Tu fais de ton mieux… et c’est déjà inquiétant.",
+            "Ton organisation ? Un concept abstrait.",
+            "Tu veux réussir… mais sans mise à jour.",
+            "Même la chance te met en silencieux.",
+            "Tu commences fort… puis tu disparais.",
+            "Ton niveau ? Toujours en cours d’installation."
     );
     private static final List<String> greenAdvises = List.of(
             "Si t’as pas compris, fais comme si c’était inutile.",
@@ -91,7 +124,22 @@ public class AdviseProvider {
             "Pourquoi faire aujourd’hui ce que tu peux regretter demain ?",
             "Le succès, c’est surfait.",
             "T’as réussi à perdre du temps efficacement, bravo.",
-            "Oublie pas de respirer"
+            "Oublie pas de respirer",
+            "Tu promets beaucoup… surtout à toi-même.",
+            "Tu démarres vite… mais tu finis jamais.",
+            "Ton énergie ? 100% au début, 0% après.",
+            "Tu réfléchis longtemps… pour rien décider.",
+            "Tu voulais réussir… t’as surtout essayé.",
+            "Ton timing est parfait… pour rater.",
+            "Tu fais des plans… puis tu les oublies.",
+            "Tu progresses… en arrière.",
+            "Ton sérieux ? Disparu sans laisser de trace.",
+            "Tu donnes tout… pendant 5 minutes.",
+            "Ton effort est réel… le résultat moins.",
+            "Tu changes rien… mais t’espères tout.",
+            "Tu comprends vite… mais trop tard.",
+            "Ton focus ? Une légende.",
+            "Tu lâches rien… sauf quand ça commence."
     );
 
     private static final Map<BadnessLevel, List<String>> allAdvises = new HashMap<>();
@@ -110,7 +158,27 @@ public class AdviseProvider {
     }
 
     public static void generateAdvise() {
-        // TODO: gen advise
+
+        JComboBox<String> choose = new JComboBox<>();
+        choose.addItem(BadnessLevel.GREEN.getDisplayText());
+        choose.addItem(BadnessLevel.ORANGE.getDisplayText());
+        choose.addItem(BadnessLevel.RED.getDisplayText());
+
+        int check = JOptionPane.showConfirmDialog(
+                PotoFlux.app.getFrame(),
+                choose,
+                "Choisi un type de conseil",
+                JOptionPane.OK_CANCEL_OPTION
+        );
+        if (check == JOptionPane.CANCEL_OPTION) return;
+
+        String advise = getAdvise(BadnessLevel.getFromDisplayText(((String) choose.getSelectedItem())));
+        JOptionPane.showMessageDialog(
+                PotoFlux.app.getFrame(),
+                advise,
+                "voici un conseil",
+                JOptionPane.INFORMATION_MESSAGE
+        );
     }
 
 }
