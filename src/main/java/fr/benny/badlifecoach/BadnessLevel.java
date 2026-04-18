@@ -1,14 +1,16 @@
 package fr.benny.badlifecoach;
 
 public enum BadnessLevel {
-    GREEN("vert"),
-    ORANGE("orange"),
-    RED("rouge");
+    GREEN("vert", "green_advises.json"),
+    ORANGE("orange", "orange_advises.json"),
+    RED("rouge", "red_advises.json");
 
     private final String displayText;
+    private final String fileName;
 
-    BadnessLevel(String displayText) {
+    BadnessLevel(String displayText, String fileName) {
         this.displayText = displayText;
+        this.fileName = fileName;
     }
 
     public String getDisplayText() {
@@ -20,5 +22,9 @@ public enum BadnessLevel {
             if (level.displayText.equals(displayText)) return level;
         }
         return null;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 }
