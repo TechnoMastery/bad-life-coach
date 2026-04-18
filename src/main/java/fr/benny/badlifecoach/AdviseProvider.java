@@ -124,7 +124,22 @@ public class AdviseProvider {
             "Pourquoi faire aujourd’hui ce que tu peux regretter demain ?",
             "Le succès, c’est surfait.",
             "T’as réussi à perdre du temps efficacement, bravo.",
-            "Oublie pas de respirer"
+            "Oublie pas de respirer",
+            "Tu promets beaucoup… surtout à toi-même.",
+            "Tu démarres vite… mais tu finis jamais.",
+            "Ton énergie ? 100% au début, 0% après.",
+            "Tu réfléchis longtemps… pour rien décider.",
+            "Tu voulais réussir… t’as surtout essayé.",
+            "Ton timing est parfait… pour rater.",
+            "Tu fais des plans… puis tu les oublies.",
+            "Tu progresses… en arrière.",
+            "Ton sérieux ? Disparu sans laisser de trace.",
+            "Tu donnes tout… pendant 5 minutes.",
+            "Ton effort est réel… le résultat moins.",
+            "Tu changes rien… mais t’espères tout.",
+            "Tu comprends vite… mais trop tard.",
+            "Ton focus ? Une légende.",
+            "Tu lâches rien… sauf quand ça commence."
     );
 
     private static final Map<BadnessLevel, List<String>> allAdvises = new HashMap<>();
